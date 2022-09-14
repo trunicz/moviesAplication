@@ -1,10 +1,22 @@
 <template>
   <form class="min-h-screen">
-    <label for="user">user:</label>
-    <input type="text" name="user" id="user" v-model="user" />
-    <label for="pass">Pass:</label>
-    <input type="text" name="pass" id="pass" v-model="pass" />
-    <button v-on:click.prevent="login" class="btn">Login</button>
+    <div class="mx-auto pt-80 w-1/6 flex flex-col">
+      <label class="text-xl text-black" for="user">user:</label>
+      <input
+        class="input input-bordered w-full max-w-xs"
+        type="text"
+        name="user"
+        id="user"
+        v-model="user" />
+      <label class="text-xl text-black" for="pass">Pass:</label>
+      <input
+        class="input input-bordered w-full max-w-xs mb-10"
+        type="text"
+        name="pass"
+        id="pass"
+        v-model="pass" />
+      <button v-on:click.prevent="login" class="btn">Login</button>
+    </div>
   </form>
 </template>
 

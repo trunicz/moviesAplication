@@ -1,5 +1,5 @@
 <template>
-  <div class="">{{ (this.id = idMovie) }}</div>
+  <div class="hidden">{{ (this.id = idMovie) }}</div>
   <div class="p-32 min-h-screen">
     <div class="card h-auto lg:card-side bg-base-100 shadow-xl">
       <figure class="w-1/4">
@@ -37,10 +37,17 @@
           <div class="modal">
             <div class="modal-box bg-white">
               <h3 class="font-bold text-lg">Set Rate</h3>
-              <p class="py-4">
-                You've been selected for a chance to get one year of
-                subscription to use Wikipedia for free!
-              </p>
+              <div class="rating py-4">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star"
+                  checked />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div>
               <div class="modal-action">
                 <label for="my-modal" class="btn">Yay!</label>
               </div>
